@@ -29,7 +29,7 @@ pipeline {
             }
         }
        }
-       
+
          stage ('deploye on kubernetes') {
            steps {
             withKubeConfig([credentialsId: 'kubeconfig']) {
@@ -42,7 +42,7 @@ pipeline {
         }
        }
        
-       
+       #this is comment
 
        }
 }
